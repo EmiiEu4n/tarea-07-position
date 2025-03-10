@@ -21,6 +21,9 @@ body {
   font-family: var(--font-contenido), sans-serif;
   font-size: 16px;
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 html {
@@ -66,6 +69,7 @@ nav {
 /* tarjetas */
 main {
   background-color: var(--color-gris);
+  flex: 1;
 }
 .seccion-tarjetas {
   display: flex;
@@ -135,27 +139,29 @@ main {
 }
 
 /* btn subir */
-.btn-subir a{
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    background-color: var(--color-naranja);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--blanco);
-    font-size: 24px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+.btn-subir a {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-naranja);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blanco);
+  font-size: 24px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
 }
 
-footer{
-    background-color: #DFDFDF;
+footer {
+  background-color: #dfdfdf;
+  margin-top: auto;
 }
 
-.contenedor-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
